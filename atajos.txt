@@ -1,6 +1,7 @@
 ctrl + n = nueva pagina
 ctrl + s = guardar
 ctrl + f = buscar
+ctrl + w = cerrar pestaña
 ctrl + z = deshacer
 ctrl + d = seleccionar lo que esta en el cursor y ademas repetidos en la segunda y mas veces
 ctrl + shift + d = duplicar linea del marcador
@@ -27,3 +28,5 @@ https://htmlbeautify.com/
 https://chat.openai.com/
 
 CONSOLA DE NAVEGADOR = F12
+tab= identar adelante
+shift + tab= identar atras
