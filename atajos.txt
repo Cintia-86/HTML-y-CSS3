@@ -1,0 +1,29 @@
+ctrl + n = nueva pagina
+ctrl + s = guardar
+ctrl + f = buscar
+ctrl + z = deshacer
+ctrl + d = seleccionar lo que esta en el cursor y ademas repetidos en la segunda y mas veces
+ctrl + shift + d = duplicar linea del marcador
+
+ctrl + (  "k" y "b" ) abre y cierra menu
+
+ctrl + ruedita = zoom código
+
+F5 = recargar pagina en navegador
+
+RE PAG/ AV PAG => video anterior y siguiente
+flechas avanzar en video
+
+####### TODOS LOS ATAJOS SE ENCUENRAN RESALTADOS EN EL MENU #########
+
+acostumbrarse a usar la tecla fin e inicio
+
+alt + tab importante para moverte en windows
+
+spacio = reproducir  y stop video
+
+
+https://htmlbeautify.com/
+https://chat.openai.com/
+
+CONSOLA DE NAVEGADOR = F12
