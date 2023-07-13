@@ -1,18 +1,37 @@
 /* Fuentes personalizadas */
+/*
+para apuntar las modificaciónes de un css a una etiqueta, poner solo el nombre de la etiqueta y aplicara a todo lo que encuenta. 
+Este metodo no es recomendado ya que cuando querramos hacer un div tomara el color rojo anque no lo querramos
+<div></div>
+div{
+	color: red;
+}
+cuando queremos apuntar las modificaciones a un elemento con un id se usa la almoadilla 
+(recordar que los ids son unicos por eso utilizamos el singular)
+<div id="caja"></div>
+#caja{
+	color: red;
+}
+cuando necesitamos aplicar un estilo a muchos elementos utilizar clases ya que los ids son unicos
+<div class="cajas"></div>
+.cajas{
+	color: red;
+}
+*/
 
 @font-face{
 font-family: ubuntuRegular;
-src: url(fuentes/ubuntu-R.ttf) format('truetype');
+src: url(fuentes/Ubuntu-Regular.ttf) format('truetype');
 }
 
 @font-face{
 	font-family: ubuntuBold;
-	src: url(fuentes/ubuntu-B.ttf) format('truetype');
+	src: url(fuentes/Ubuntu-Bold.ttf) format('truetype');
 }
 
 @font-face{
 font-family: ubuntuItalic;
-src: url(fuentes/ubuntu-Italic.ttf) format('truetype');
+src: url(fuentes/Ubuntu-Italic.ttf) format('truetype');
 }
 
 /* Estilos basicos */
@@ -31,18 +50,68 @@ top:-20%;
 margin-top:10px;
 letter-spacing: 0px;
 display:inline;
-}
 
+}
 p{
 font-family: ubuntuRegular;
+}
+
+/*Menu de navegacion*/
+nav{
+display:inline; 
+float:right; 
+margin:20px;
+}
+
+nav ul{
+font-size: 12px;
+padding-left:0px;
+margin-left:0px;
+background-color: grey;
+color:white;
+width:50%;
+font-famili:ubuntuRegular;
+position:relative;
+display:inline;
+}
+
+nav ul li{
+display:inline; 
+text-aline:center;
+
+}
+
+nav ul li a{
+background: :gray;
+color:white;
+text-decoration: none;
+float:right;
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-moz-border-radius: 0px 10px 0px 10px;
+-o-border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 5px white;
+
+}
+
+nav ul li a:hover{
+background:white;
+color: black;
+box-shadow: 0px 0px 25px white;
+-webkit-box-shadow: 0px 0px 25px white;
+}
+
+canvas{
+border:0px solid white;	
 }
 
 /*Maquetación principal*/
 body{
 text-align: center;
 margin:0px;
-background: lightgray;
-
+background: grey;
+background:url('../img/negro.png'),url('../img/blanco.png'),url('../img/fondo.jpg');
 }
 
 #principal{
@@ -52,13 +121,14 @@ width:80%;
 height:100%;
 background: gray ;
 position: relative;
+
 }
 
 #cajaheader{
 width:100%;
 height:100px;
 position: absolte;
-background: darkgray;
+background: rgba(255,255,255,0.5) ;
 }
 
 header{
@@ -67,7 +137,7 @@ margin:auto;
 text-align: left;
 width:100%;
 height: :100px;
-background: darkgray;
+/*background: darkgray;*/
 overflow: hidden;
 
 border:2px solid white;
@@ -82,6 +152,8 @@ box-shadow: 0px 0px 10px white;
 -webkit-border-shadow: 0px 0px 10px white;
 -o-box-shadow: 0px 0px 10px white;
 }
+
+
 
 #logo{
 width:100%;
@@ -119,24 +191,251 @@ box-shadow: 0px 0px 10px white;
 -moz-border-shadow: 0px 0px 10px white;
 -webkit-border-shadow: 0px 0px 10px white;
 -o-box-shadow: 0px 0px 10px white;
+background: rgba(255,255,255,0.8);
 
 }
 
 #article{
-	width: 50%;
-	background:white;
+width: 55%;
+/*background:white;*/
+background: rgba(255,255,255,0);
+margin:10px;
+height:100%;
+diplay:table;
+border: 1px solid white;
+border-radius: 0px 25px 0px 25px;
+-webkit-border-radius: 0px 25px 0px 25px;
+box-shadow: 3px 3px 10px black;
+-webkit-box-shadow: 3px 3px 10px black;
+padding: 10xp 10px 10px 150px;
+opascity:0.5;
+transition: opacity 1s, box-shadow 1s, tranform 1s, background 1s;
+-webkit-transition: opacity 1s, -webkit-box-shadow 1s, -webkit-transform 1s, background 1s;
+transform:scale(1.1);
+-webkit-transform:scale(1.1);
+}
+article:hover{
+background: rgba(255,255,255,1);
+opacity:1;	
+transform:scale(1.1,1.1);
+-webkit-transform:scale(1.1,1.1);
+
 }
 
 
-#aside{
-	float: right;
-	display: inline-table;
-	width: 40%;
-	background: white;
+time{
+font-family:ubuntuRegular;
+font-size:10px;	
+}
+
+article:hover{
+box-shadow: 0px 0px 25px white;
+-webkit-box-shadow: 0px 0px 25px white;
+}
+
+aside{
+float: right;
+display: inline-table;
+width: 20%;
+
+margin:10px;
+padding:10px;
+border: 1px solid white;
+border-radius: 0px 25px 0px 25px;
+-webkit-border-radius: 0px 25px 0px 25px;
+box-shadow: 3px 3px 10px black;
+-webkit-box-shadow: 3px 3px 10px black;
+}
+
+aside:hover{
+box-shadow: 0px 0px 25px white;
+-webkit-box-shadow: 0px 0px 25px white;
+background: rgba(255,255,255,1);
+}
+
+aside ul{
+width:100%;
+height:100%;
+padding-left:0;
+padding-right:0;
+colo:white;
+float:left;
+font-family:ubuntuRegular;
+font-size: 10px;
+text-decoration:none;
+list-style: none;
+}
+
+aside ul li{
+width:100%;
+text-decoration:none;
+borderr:1px solid white;
+border-radius: 0px 5px 0px 5px;
+-webkit-border-radius: 0px 5px 0px 5px;
+text-decoration:none;
+}
+
+aside ul li a{
+width:100%;
+height:30%;
+overflow:hidden;	
+text-decoration:none;
 }
 
 #sobremi{
-width:100%;
-height:100%;
+width:10%;
+height:10%;
 background:blue;
+color:white;
+background:black;
+font-size: 10px;
+text-decoration:none;
+text-align: justify;
+}
+
+#sobremi a{
+colo: white;
+text-decoration:none;
+} 
+
+#mifoto{
+width:20%;
+height:20%;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align: left;
+
+background: url('../photo/video.png');
+background-size: 10% 10%;
+diplay: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+animation: parpadeo 5s;
+-webkit-animation: parpadeo 5s;
+animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+
+}
+
+@keyframes parpadeo{
+
+0%{box-shadow: 0px 0px 10px white;}
+50%{box-shadow: 0px 0px 50px white;}
+100%{box-shadow: 0px 0px 10px white;}	
+}
+
+@-webkit-keyframes parpadeo{
+
+0%{-webkit-box-shadow: 0px 0px 10px white;}
+50%{-webkit-box-shadow: 0px 0px 50px white;}
+100%{-webkit-box-shadow: 0px 0px 10px white;}	
+}
+
+#logoblender{
+width:20%;
+height:20%;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align: left;
+
+background: url('../photo/flork.png');
+background-size: 10% 10%;
+diplay: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+}
+
+#logoactualidad3d{
+width:20%;
+height:20%;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align: left;
+
+background: url('../photo/play.png');
+background-size: 10% 10%;
+diplay: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+
+}
+
+
+#logov2b{
+width:20%;
+height:20%;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align: left;
+
+background: url('../photo/Zamudio Cintia.jpg');
+background-size: 10% 10%;
+diplay: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+}
+
+
+#mifotoarticulo{
+width:10%;
+height:10%;
+font-family:ubuntuBold;
+font-size: 20px;
+color:white;
+text-align: left;
+
+background: url('../photo/flork.png');
+background-size: 100% 100%;
+diplay: box;
+
+border: 1px solid white;
+border-radius: 0px 10px 0px 10px;
+box-shadow: 0px 0px 10px white;
+-webkit-border-radius: 0px 10px 0px 10px;
+-webkit-box-shadow: 0px 0px 10px white;
+float: left;
+margin:10px;
+
+position:absolute;
+transform:translate(-140px, 0px);
+-webkit-transform:translate(-140px, 0px);
+
 }
