@@ -40,20 +40,50 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: ubuntuBold;
 }
 
-h1,h2 {
-	transform : translate(150px 0px);
-	-webkit-transform: translate(150px 0px);
-	position: relative;
-	color: white;
-	font-size: 32px;
-	top: -20%;
-	margin-top: 10px;
+h1, {
+
+	color:white;
+	font-size: 36px;
+	top:-20%;
+	margin-top:10px;
 	letter-spacing: 0px;
-	display: inline;
+	display:inline;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+h2{
+
+	color:white;
+	font-size: 16px;
+	top:-20%;
+	margin-top:10px;
+	letter-spacing: 0px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
 }
 
+#tipo{
+
+	position:absolute;
+	transform:translate(100px, 10px);
+	-webkit-transform:translate(100px,10px);
+}
+h3{
+	margin:0px;
+	padding:0px;
+	font-size:36px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+h4{
+	margin:0px;
+	padding:0px;
+	font-size:14px
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
 p {
 	font-family: ubuntuRegular;
+	font-size:12px;
+	text-align:justify;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 /*Menu de navegacion*/
@@ -106,10 +136,10 @@ canvas {
 
 /*Maquetación principal*/
 body {
-	text-align: center;
-	margin: 0px;
+	text-align: left;
+	margin: auto;
 	background: grey;
-	background: url('../img/negro.png'),url('../img/blanco.png'),url('../img/fondo.jpg');
+	background: url('../img/cielo.jpg'),url('../img/ondas.jpg'),url('../img/aestic.jpg'),url('../img/fondo.jpg');
 }
 
 #principal {
@@ -117,8 +147,8 @@ body {
 	margin: auto;
 	width: 80%;
 	height: 100%;
-	background: gray;
 	position: relative;
+	background: rgba(255,255,255,0.5);
 }
 
 #cajaheader {
@@ -129,18 +159,20 @@ body {
 }
 
 header {
-	display: table;
 	margin: auto;
 	text-align: left;
-	width: 100%;
-	height: 100px;
-/*background: darkgray;*/
+	width:100%;
+	height:100px;
+    /*background: darkgray;*/
 	overflow: hidden;
+
 	border: 2px solid white;
+
 	border-radius: 5px 35px 0px 0px;
 	-moz-border-radius: 5px 35px 0px 0px;
 	-webkit-border-radius: 5px 35px 0px 0px;
-	o-border-radius: 5px 35px 0px 0px;
+	-o-border-radius: 5px 35px 0px 0px;
+
 	box-shadow: 0px 0px 10px white;
 	-moz-border-shadow: 0px 0px 10px white;
 	-webkit-border-shadow: 0px 0px 10px white;
@@ -395,7 +427,7 @@ aside ul li a {
 	-webkit-border-radius: 0px 10px 0px 10px;
 	-webkit-box-shadow: 0px 0px 10px white;
 	float: left;
-	margin: 10px;
+	margin: 10px; 
 	position: absolute;
 	transform: translate(-140px, 0px);
 	-webkit-transform: translate(-140px, 0px);

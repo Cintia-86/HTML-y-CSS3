@@ -1,0 +1,14 @@
+#v 1.0
+#este manifiesto corresponde a mi blog
+
+CACHE MANIFEST
+index.html
+css/estilos.css
+img/aestic.jpg
+img/cielo.jpg
+img/cieloestrellado.jpg
+imp/ondas.jpg
+photo/flork.png
+photo/play.png
+photo/video.png
+photo/Zamudio Cintia.jpg
