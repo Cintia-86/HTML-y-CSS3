@@ -6,7 +6,7 @@
 		  	<meta name="description" content="Weblog">
 		  	<meta name="keywords" content="weblog">
 		  	<meta http-equiv="refresh" content="500">
-		  	<link rel=stylesheet href="css/estilos.css">
+		  	<link rel=stylesheet href="../css/estilos.css">
   </head>
   <body>
 		<div id="cajaheader"></div>
@@ -38,7 +38,7 @@
 
 //Recibo las variabes del formulario
 
-$nombre = $ POST['nombre'];
+$nombre = $_POST['nombre'];
 $mail = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 
