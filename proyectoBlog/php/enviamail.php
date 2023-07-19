@@ -1,7 +1,12 @@
+
 <!DOCTTYPE html>
 <html>
   <head manifest="/manifiesto/manifiesto.cache">
-  	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		  	<title>Weblog de Jose Vicente Carratala</title>
+		  	<meta name="description" content="Weblog">
+		  	<meta name="keywords" content="weblog">
+		  	<meta http-equiv="refresh" content="500">
+		  	<link rel=stylesheet href="css/estilos.css">
   </head>
   <body>
 		<div id="cajaheader"></div>
@@ -29,38 +34,45 @@
 				</h2>
 			</header>
 			<div id="contenido">
-			  <form action="php/enviamail.php" method="post">
-			    <table border="1">
-			      <tr>
-			        <td width=50%>
-			            <p style="text-aline:right;">Introduce tu nombre</p>
-			        </td>
-			        <td width="50%">
-			          <input type="text" width=100% name="nombre" required name="nombre"/>
-			        </td>
-			      </tr>
-			      <tr>
-			      	<td>
-			      		<p style="text-aline:right;">Introduce tu email</p>
-			        </td>
-			      	<td>	
-			      	  <input type="email"	width=100% value="ejemplo: usuario@dominio.com" name="email"/>
-			      	 </td>
-			      </tr>	  
-			      <tr>
-			      	<td><p style="text-aline:right;">Escribe tu mensaje</p>
-			      	</td>
-			      	<td>
-			      	   <textarea col=40 rows=6 name="mensaje"></textarea>
-			      	</td>
-			      </tr>
-			     
-			      <tr>
-			      	 <td>
-			      	 </td>
-			      	    <input type="submit" value="Enviar">	
-			    </table>
-			  </form>
+			  <?php
+
+//Recibo las variabes del formulario
+
+$nombre = $ POST['nombre'];
+$mail = $_POST['email'];
+$mensaje = $_POST['mensaje'];
+
+//Te muestro las variables
+
+
+echo "<h3>El mensaje que has enviado es:</h3>";
+echo "<br />";
+echo "<p>Nombre: ";
+echo $nombre;
+echo "<br />";
+echo "Email:";
+echo $mail;
+echo "<br />";
+echo "Mensaje: ";
+echo $mensaje;
+echo "</p>";
+
+//Envio un email
+/*
+$aquien = "info@jocarsa.com";
+$asunto ="Has recibido un corre del Blog";
+$mensajemail = $nombre." con el email ".$mail." te ha enviado un mensaje que dice ".$mensaje;
+
+if(mail($aquien,$asunto;$mesaje)){
+
+echo "Tu mail se ha enviado correctamente";
+
+}else{
+	echo "El envio del mail ha fallado";
+}
+*/
+
+?>
 			</div>
 			
 			<footer>
