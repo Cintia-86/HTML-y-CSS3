@@ -117,14 +117,15 @@ echo "Tu mail se ha enviado correctamente";
 					ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*25,escala*20,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill(); 
+			    ctx.closePath;
+			    ctx.fill(); 
 
-	    ctx.fillStyle=(micolor);
+			    ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*90,escala*40,Math.PI,Math.PI*2,false);
-	    ctx.closePath;
-	    ctx.fill(); 
+	    		ctx.fill();
+	     		ctx.closePath;
+	    
 
 	    //Dibujo el ícono Contacto
 
@@ -134,26 +135,26 @@ echo "Tu mail se ha enviado correctamente";
 					ctx.fillStyle=(miotrocolor);
 					ctx.beginPath();
 					ctx.arc(escala*50-10,escala*25,escala*20,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill(); 
+	    		ctx.closePath;
+	    		ctx.fill(); 
 
-	    ctx.fillStyle=(miotrocolor);
+	    		ctx.fillStyle=(miotrocolor);
 					ctx.beginPath();
 					ctx.arc(escala*50-10,escala*90,escala*40,Math.PI,Math.PI*2,false);
-	    ctx.closePath;
-	    ctx.fill(); 
+			    ctx.closePath;
+			    ctx.fill(); 
 
-	    ctx.fillStyle=(micolor);
+			    ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50+10,escala*25,escala*20,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill(); 
+			    ctx.closePath;
+			    ctx.fill(); 
 
-	    ctx.fillStyle=(micolor);
+			    ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50+10,escala*90,escala*40,Math.PI,Math.PI*2,false);
-	    ctx.closePath;
-	    ctx.fill(); 
+			    ctx.closePath;
+			    ctx.fill(); 
 
 	    //Dibujo el ícono Inicio
 
@@ -163,20 +164,20 @@ echo "Tu mail se ha enviado correctamente";
 					ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*50,escala*40,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill(); 
+			    ctx.closePath;
+			    ctx.fill(); 
 
-	    ctx.fillStyle=(mitercercolor);
+			    ctx.fillStyle=(mitercercolor);
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*50,escala*30,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill()
+			    ctx.closePath;
+			    ctx.fill()
 
 					ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*50,escala*20,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill(); 
+			    ctx.closePath;
+			    ctx.fill(); 
 
 	    //Dibujo el ícono Noticias
 
@@ -186,10 +187,9 @@ echo "Tu mail se ha enviado correctamente";
 					ctx.fillStyle=(micolor);
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*50,escala*20,0,Math.PI*2,true);
-	    ctx.closePath;
-	    ctx.fill(); 
-
-	    ctx.fillStyle=(micolor);
+			    ctx.closePath;
+			    ctx.fill(); 
+						    	
 					ctx.beginPath();
 					ctx.arc(escala*50,escala*50,escala*40,Math.PI,Math.PI*2,false);
 	    ctx.closePath;

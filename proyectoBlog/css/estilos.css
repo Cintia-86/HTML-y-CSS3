@@ -21,7 +21,7 @@ cuando necesitamos aplicar un estilo a muchos elementos utilizar clases ya que l
 
 @font-face {
 	font-family: ubuntuRegular;
-src: url(fuentes/Ubuntu-Regular.ttf) format('truetype');
+	src: url(fuentes/Ubuntu-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -35,6 +35,13 @@ src: url(fuentes/Ubuntu-Italic.ttf) format('truetype');
 }
 
 /* Estilos basicos */
+
+.redimensionar-svg {
+	margin: 20px;
+	margin-top: 50px;
+  	width: 200px; /* Establecer el ancho deseado */
+  	height: 150px; /* Establecer la altura deseada */
+}
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: ubuntuBold;
@@ -321,7 +328,7 @@ aside ul li a {
 	font-size: 20px;
 	color: white;
 	text-align: left;
-	background: url('../photo/josevicentecarratala.jpg');
+	background: url('../photo/mifoto.jpg');
 	background: size: 100% 100%;
 	background-repeat: no-repeat;
 	display: box;
