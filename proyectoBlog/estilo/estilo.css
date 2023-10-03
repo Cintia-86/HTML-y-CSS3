@@ -30,7 +30,7 @@
  		   	border-radius: 15px;
  		   }
  		   header{
- 		   	  background:rgba(255,255,255,0);
+ 		   	  background:transparent;
  		   	  height:150px;
  		   }
  		   #contenido{
@@ -170,9 +170,15 @@
 	 		   	font-family:ubuntuBold;
 	 		   	color:rgba(255,255,255,0);
 	 		   	text-shadow: 3px 3px 5px rgba(0,0,0,0);
-	 		   	font-size:32px;
+	 		   	font-size:32px; 
+	 		   	line-height: 100px;
+	 		   	top: 100px;
+	 		   	left: 50px;
+	 		   	width: 300px;
+
 	 		   	-webkit-transform:translate(150px,0px);
 	 		   	-webkit-animation: muevetexto1 5s;
+	 		   	-webkit-animation-delay: 5s;
  		   }
 
  		   @-webkit-keyframes muevetexto1{
@@ -180,7 +186,7 @@
 	 		   	 25%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
 	 		   	 50%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
 	 		   	 75%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
-	 		   	 100%{color:rgba(255,255,255,0);-webkit-transform:translate(150px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+	 		   	 100%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
  		   }
 
  		    #animaciontexto2{
@@ -189,17 +195,20 @@
 	 		   	color:rgba(255,255,255,0);
 	 		   	text-shadow: 3px 3px 5px rgba(0,0,0,0);
 	 		   	font-size:32px;
-	 		   	-webkit-transform:translate(150px,0px);
-	 		   	-webkit-animation: muevetexto2 5s;
-	 		   	-webkit-animation-delay: 5s;
+	 		   	line-height: 400px;
+	 		   	top: 150px;
+
+	 		   	-webkit-transform:translate(150px,0px);top: 150px;
+	 		   	-webkit-animation: muevetexto2 20s;
+	 		   	-webkit-animation-delay: 20s;
  		   }
 
  		   @-webkit-keyframes muevetexto2{
 	 		   	 0%{color:rgba(255,255,255,0);-webkit-transform:translate(-150px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0);}
-	 		   	 25%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+	 		   	 25%{color:rgba(255,255,255,0);-webkit-transform:translate(-150px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.0);}
 	 		   	 50%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
 	 		   	 75%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
-	 		   	 100%{color:rgba(255,255,255,0);-webkit-transform:translate(150px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+	 		   	 100%{color:rgba(255,255,255,1);-webkit-transform:translate(0px,0px);text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
 	 		   }
  		   table{
  		   	  width:50%;
